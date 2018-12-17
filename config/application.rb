@@ -15,5 +15,8 @@ module DitoProject
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # Directory for store and process CSV files
+    config.csv_directories = ['csv_points/*.csv']
   end
 end

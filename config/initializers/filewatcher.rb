@@ -6,7 +6,7 @@ Rails.application.config.after_initialize do
   Thread.new do
     score_service = ScoreService.new
 
-    Filewatcher.new('csv_points/*.csv').watch do |filename, event|
+    Filewatcher.new(Rails.configuration.csv_directories).watch do |filename, event|
       if(event != :deleted)
         puts "File updated: " + filename
 
