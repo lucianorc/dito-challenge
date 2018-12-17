@@ -17,6 +17,10 @@
 /storage/*
 !/storage/.keep
 
+# Ignote .csv official files
+/csv_points/*
+!/csv_points/.keep
+
 /node_modules
 /yarn-error.log
 
